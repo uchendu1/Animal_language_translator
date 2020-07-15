@@ -16,7 +16,7 @@
 }
 
 
-    /* .parent-nav2 {
+/* .parent-nav2 {
         position: absolute;
         width: 1300px;
         height: 33px;
@@ -141,30 +141,30 @@ v5 {
 
 .foot {
     position: absolute;
-width: 100%;
-height: 198px;
- left: 0px;
-top: 2028px; 
+    width: 100%;
+    height: 198px;
+    left: 0px;
+    top: 2028px;
 
-background: #197122;
+    background: #197122;
 }
 
-.box{
+.box {
     position: absolute;
-width: 33px;
-height: 26px;
-left: 481px;
-top: 2114px;
+    width: 33px;
+    height: 26px;
+    left: 481px;
+    top: 2114px;
 
-font-family: Gilroy-Bold;
-font-size: 27.5665px;
-line-height: 66px;
-/* or 240% */
+    font-family: Gilroy-Bold;
+    font-size: 27.5665px;
+    line-height: 66px;
+    /* or 240% */
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #000000;
+    color: #000000;
 }
 
 .access {
@@ -175,31 +175,242 @@ color: #000000;
     height: 63px;
     left: 584px;
     top: 1899px;
-    
+
     background: #0239C0;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 
 
-#box2{
+#box2 {
     width: 25.99px;
     height: 22.05px;
     left: 631.14px;
     top: 2113.12px;
 }
 
-#box3{
+#box3 {
     width: 32.29px;
     height: 22.05px;
     left: 775.43px;
-    top: 2113.12px;  
+    top: 2113.12px;
 }
 
-#box4{
+#box4 {
     width: 32.29px;
     height: 22.05px;
     left: 923.92px;
-    top: 2113.12px; 
+    top: 2113.12px;
 }
 
+.Request {
+    background: #375CE0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.div1 {
+    background: #FFFAF2;
+
+}
+
+.understand {
+    font-size: 40px;
+    line-height: 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    font-family: Gilroy-Bold;
+    color: #3F3F3F;
+}
+
+.never {
+    font-family: Gilroy-Medium;
+    font-size: 15px;
+    line-height: 33px;
+    color: #808080;
+}
+
+.green {
+    color: #077405;
+
+}
+
+
+
+.email {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+.form {
+    margin: auto;
+}
+
+.beta {
+    border-radius: 20px;
+    width: 150px;
+    height: 28px;
+    background-color: #50C73D;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.days {
+    color: #716F6F;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.phone1 {
+    width: 500px;
+    height: 300px;
+
+}
+
+.last {
+    width: 300px;
+    height: 100px;
+}
+
+.bg1 {}
+
+.bg2 {}
+
+.explore {
+    color: #808080;
+}
+
+.dog-print {
+    color: #197122;
+}
+
+.four-box {
+    background: #FFFFFF;
+    border: 0.2px solid #C6C6C6;
+    box-sizing: border-box;
+    box-shadow: 0px 11px 15px rgba(134, 91, 255, 0.16), 0px 24px 28px rgba(233, 233, 233, 0.62);
+    border-radius: 6px;
+}
+
+hr{
+    border: 1px solid #9F9F9F;
+    width: 20px;
+    justify-self: center;
+}
+
+.top-20 {
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+}
+
+.sound {
+    color: #3F3F3F;
+    font-family: Gilroy-Bold;
+
+}
+
+.second  {
+    color: #FFAC7E;
+
+}
+.paw {
+   
+    
+    color: #ffffff;
+    background-color:  #FFAC7E;
+    border-radius: 100%;
+}
+.mic {
+   background-color: #537BDD;
+   border-radius: 100%;
+   color: #ffffff;
+
+
+}
+.notify {
+    border-radius: 100%;
+   color: #ffffff;
+    background-color: #FFAC7E;
+
+}
+.language {
+    background-color: #50C73D;
+    border-radius: 100%;
+   color: #ffffff;
+   /* display: flex; */
+   /* justify-content: center; */
+}
+
+.phone-sound{
+position: relative;
+}
+
+.owl {
+    position: absolute;
+    width: 105px;
+    height: 72px;
+    left: 380px;
+    top: 203px;
+}
+
+.cat {
+    position: absolute;
+    width: 109px;
+    height: 71px;
+    left: 10px;
+    top:100px;
+}
+
+.dog {
+    position: absolute;
+    width: 97px;
+    height: 70px;
+    left: 0;
+    right: 10px;
+    top: 0px;
+}
+
+.media {
+    font-family: Gilroy-Bold;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #3F3F3F;
+}
+
+.nyt {
+    width: 80px;
+    height: 50px;
+}
+.NYT {
+    font-family: Poppins;
+font-style: italic;
+font-weight: normal;
+font-size: 20px;
+line-height: 18px;
+color: #808080;
+}
+
+.testimonies{
+    background: #FEFEFE;
+border: 0.1px solid #CDCDCD;
+box-sizing: border-box;
+box-shadow: 0px 11px 15px rgba(200, 200, 200, 0.2), 0px 24px 38px rgba(230, 230, 230, 0.14);
+padding: 16px;
+}

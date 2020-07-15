@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -16,21 +21,19 @@
 <body>
 
 
-    <header class="container-fluid shadow-sm">
-        <nav class="navbar nav-top navbar-expand-md navbar-light container-md px-0">
+    <header class="container-fluid shadow-sm pb-5">
+        <nav class="navbar nav-top navbar-expand-md navbar-light">
             <a class="navbar-brand" href="#">
                 <p class="pet">Pet Translator</p>
-                <img class="v5" src="./images/Vector5.svg" alt="#">
-                <img class="v4" src="./images/Vectorpet4.svg" alt="#">
-                <img class="v3" src="./images/Vectorpet3.svg" alt="#">
-
-                <img class="v2" src="./images/Vector2pet.svg" alt="#">
-
+                <i class="fa fa-paw fa-2x dog-print ml-5"></i>
             </a>
-            <button style="background-color: #0239C0 !important;" class="navbar-toggler" type="button"
+
+            <button style="background-color: #0239C0;" class="navbar-toggler collapsed" type="button"
                 data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+                </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -45,63 +48,218 @@
                         <a class="nav-link px-4 font-weight-bold" href="#">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pl-md-4 font-weight-bold" href="#">
-                            signup for early access
-                        </a>
+                        <!-- <a class="nav-link pl-md-4 font-weight-bold Request text-white rounded" href="#">
+                            
+                            Request Early Access
+                        </a> -->
+
+                        <button class="btn px-4 font-weight-bold mx-3 my-2 my-sm-0 text-white rounded" type="submit"
+                            style="background-color: #0239C0;">
+                            Request Early Access
+                        </button>
+
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- <div class="row parent-nav">
-        <div class="parent-nav2">
+
+    <div class="row d-flex justify-content-between div1 p-4">
+
+        <div class="col-12 col-md-6">
+
+            <div class="col-12 understand text-center">
+                <h2>Literally understand What Your Pet Is Saying </h2>
+            </div>
+
+            <div class="col-12 text-center">
+                <p class="never">
+                    Never misunderstand your pets again. <span class="green">Pet translator </span>
+                    allows you to communicate better with your pets by translating animal sounds
+                    into a language you understand!
+                </p>
+            </div>
+            <div class="row form&divrow d-flex">
 
 
-            <div>
-                <img class="v2" src="./images/Vector2pet.svg" alt="#">
-                <img class="v3" src="./images/Vectorpet3.svg" alt="#">
-                <img class="v4" src="./images/Vectorpet4.svg" alt="#">
-                <img class="v5" src="./images/Vector5.svg" alt="#">
+                <div class=" col form&betadivcol">
 
-                <p class="pet">Pet Translator</p>
+                    <div class="col-12 form text-center">
+                        <form action="form.php" action="post">
+                            <input type="email" name="email" class="w-50 my-3" placeholder="enter email address">
+                            <button class="btn px-4 font-weight-bold mx-3 my-2 my-sm-0 text-white" type="submit"
+                                style="background-color: #0239C0;">
+                                Request Early Access
+                            </button>
+
+                        </form>
+                    </div>
+
+                    <div class="col-12 text-white my-3">
+                        <div class="row d-flex justify-content-center  justify-content-md-start flex-nowrap  beta-row ">
+
+                            <p class="beta text-center mx-1" style="align-items: center;">Beta Launch:</p>
+                            <p class="days">30 days, 15:20:20 </p>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="col-12 col-md-6 phone-sound">
+            <div class="col-12 ">
+                <div>
+                    <img class="phone1" src="./images/phone1.svg" alt="#">
+                </div>
+            </div>
+
+            <!-- <div class="bg1">
 
             </div>
-            <p class="About">About</p>
-            <p class="features">Features</p>
-            <p class="pricing">Pricing</p>
+            <div class="bg2">
 
-            <p class="signup"> signup for early access</p>
+            </div> -->
 
+            <div class="floating-imgs">
+                <img class="cat" src="./images/cat.svg" alt="#">
+                <img class="dog" src="./images/dog.svg" alt="#">
+                <img class="owl" src="./images/owl.svg" alt="#">
+
+            </div>
         </div>
-    </div> -->
-
-<div class="row d-flex justify-content-center access text-white">
-<h5>Give Me access</h5>
-</div>
-
-<div class="row d-flex justify-content-center text-white formsec">
-    <div class="col col-md-6">
-        <form action="index.php" method="POST" >
-            
-            Name: <input type="text" placeholder="name" name="name" class="w-100 my-1"><br>
-            E-mail: <input type="text" placeholder="email" name="email" class="w-100 my-1"><br>
-           Submit:  <input type="submit" class="w-100 my-1">
-        </form>
     </div>
-</div>
 
-    <footer class="foot">
-        <div class="row d-flex justify-content-around">
-            <div class="box" id="box1">30</div>
-            <div class="box" id="box2">15</div>
-            <div class="box" id="box3">20</div>
-            <div class="box" id="box4">20</div>
+    <div class="row justify-content-center d-flex div1 p-4">
+        <div class="col-12 d-flex justify-content-center">
 
-
+            <p class="mx-2"> Explore Features</p>
+            <i class="fa fa-angle-double-down fa-1x "></i>
 
         </div>
-    </footer>
+    </div>
+
+    <!-- two -->
+    <div class="row d-flex justify-content-between p-5 flex-sm-nowrap pb-5">
+
+        <!-- <section></section> -->
+        <div class="col-12 col-md-3 four-box m-2 first ">
+            <div>
+                <i class="fa fa-language fa-2x language  my-4 "></i>
+
+                <h5 class="text-center sounds">20 languages supported</h5>
+            </div>
+            <hr>
+
+            <p class="top-20 text-center pt-3">choose translations in in your preferred language from a list the of the
+                top 20
+                languages in the world
+
+            </p>
+
+        </div>
+
+
+
+        <div class="col-12 col-md-3 four-box m-2">
+            <div class="">
+                <i class="fa fa-paw fa-2x  second paw my-4"></i>
+
+                <h5 class="text-center sounds">25+ pets included</h5>
+            </div>
+            <hr>
+
+            <p class="top-20 text-center pt-3">
+                Pet translator includes an extensive database for a wide range od animal languages.
+            </p>
+
+        </div>
+
+        <div class="col-12 col-md-3 four-box m-2">
+            <div>
+                <i class="fa fa-microphone fa-2x mic my-4"></i>
+                <h5 class="text-center sounds">Voice playback supported</h5>
+            </div>
+            <hr>
+
+            <p class="top-20 text-center pt-3">
+                Get options to read transactions or listen to it through a friendly inbuilt TTS system.
+            </p>
+
+        </div>
+        <div class="col-12 col-md-3 four-box m-2">
+            <div>
+                <i class="fa fa-bell fa-2x notify my-4"></i>
+                <h5 class="text-center sounds">Record 24/7 with Notification</h5>
+            </div>
+            <hr>
+
+            <p class="top-20 text-center pt-3">
+                Record pet sounds round the clock. Get notified for whilelisted words.
+                Never miss an important bark ot Hoot.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- section3 -->
+    <div class="row justify-content-between p-5">
+        <div class="col-12 col-md-6 testimonies">
+
+            <div class="col-12  my-3">
+                <h6 class="media text-center font-weight-bold"> Pet Translator on the Media</h6>
+
+                <div class="col-12 d-flex justify-content-around align-items-center">
+
+                    <img class="nyt mr-4" src="./images/nyt.png" alt="#">
+                    <p class="NYT"> "Pet Translator is bridging the gap in communications between
+                        people and animals. It's amazing!" - New York Times. </p>
+                </div>
+            </div>
+
+            <div class="col-12 my-3">
+                <div class="col-12 d-flex justify-content-around align-items-center">
+                    <p class="NYT"> "This new tech might not break the internet. Infact,
+                        it might not be breaking anything at all because it's perfect in buiding!" -wired. </p>
+                    <img class="nyt mr-4" src="./images/wired.png" alt="#">
+
+                </div>
+            </div>
+
+            <div col-12 my-3>
+
+                <div class="col-12 d-flex justify-content-around align-items-center">
+
+                    <img class="nyt mr-4" src="./images/vetstreet.png" alt="#">
+                    <p class="NYT"> "It's clear the team at Pet Translator have done their home work.
+                         They have created a polished product at a much-needed time. Humanity would be grateful" - VetStreet. </p>
+                </div>
+            </div>
+
+            <div col-12 my-3>
+
+                <div class="col-12 d-flex justify-content-around align-items-center">
+
+                    <p class="NYT"> "Brilliant work by the Team at Pet Translator. 
+                        The future is looking bright for this young startup!" - Nat Geo Wild. </p>
+                        <img class="nyt mr-4" src="./images/natgeowild.png" alt="#">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+
+        </div>
+
+
+    </div>
+
 
 
     <!-- JS, Popper.js, and jQuery -->
@@ -117,3 +275,21 @@
 </body>
 
 </html>
+
+<!-- <div class="row d-flex justify-content-center access text-white">
+<h5>Give Me access</h5>
+</div> -->
+
+
+
+<!-- <footer class="foot">
+        <div class="row d-flex justify-content-around">
+            <div class="box" id="box1">30</div>
+            <div class="box" id="box2">15</div>
+            <div class="box" id="box3">20</div>
+            <div class="box" id="box4">20</div>
+
+
+
+        </div>
+    </footer> -->
