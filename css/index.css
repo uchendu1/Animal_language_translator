@@ -218,7 +218,7 @@ v5 {
 
 .understand {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
     /* display: flex; */
     /* align-items: center; */
     font-family: Gilroy-Bold;
@@ -433,3 +433,6 @@ padding: 16px;
     background: #0239C0;
 border-radius: 8px;
 }
+
+footer {
+    background: #002E05;}
