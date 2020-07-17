@@ -1,3 +1,20 @@
+
+<?php
+$conn = mysqli_connect('localhost', 'linda', 'test1234','animal-language-translator' );
+//  $date = date_format('Y-m-d h:i:s', );
+if(!$conn){
+    die('connection error: ' . mysqli_connect_error());
+}
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $sql = "INSERT INTO `language-translator`(`id`, `email`, `created_at`) VALUES ('','".$_POST['email']."','')";
+    if(mysqli_query($conn, $sql)){
+        die('Email captured');
+    }else{
+        die('Erro capturing mail');
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,7 +99,7 @@
                 <div class=" col form&betadivcol">
 
                     <div class="col-12 form text-center">
-                        <form id="access-form">
+                        <form id="access-form" action="index.php" method="post">
                             <input type="email" name="email" class="w-50 my-3" placeholder="enter email address">
                             <button class="btn px-4 font-weight-bold mx-3 my-2 my-sm-0 text-white" type="submit"
                                 style="background-color: #0239C0;">
@@ -292,7 +309,7 @@
 
     <div class="row d-flex justify-content-center pb-4">
         <div class="col-8 text-center">
-            <form action="form.php" action="post">
+            <form action="index.php" method="post">
                 <input class="text-left email-1" type="email" placeholder=" Enter email address ">
             </form>
         </div>
@@ -320,6 +337,7 @@
 								<h5 class="pt-1">30</h5>
 							</div>
 							<h6 class="mt-2 ml-3 ml-xs-0">
+
 								Days
 							</h6>
 						</div>
@@ -397,18 +415,18 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
     <script>
-        const form = document.getElementById('access-form')
-        form.addEventListener('submit', async (event)=>{
-            event.preventDefault()
-            const email = event.target.elements.email.value
-            const json = JSON.stringify({email})
-            let response = await fetch(`/app-3/form.php`,{
-                method: 'POST',
-                body:json
-            })
-           let result =  await response.text()
-           alert(result)
-        })
+        // const form = document.getElementById('access-form')
+        // form.addEventListener('submit', async (event)=>{
+        //     event.preventDefault()
+        //     const email = event.target.elements.email.value
+        //     const json = JSON.stringify({email})
+        //     let response = await fetch(`/app-3/form.php`,{
+        //         method: 'POST',
+        //         body:json
+        //     })
+        //    let result =  await response.text()
+        //    alert(result)
+        // })
     </script>
 </body>
 
