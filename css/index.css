@@ -519,11 +519,10 @@ h4 {
   animation-name: example;
   animation-duration: 5s;
   animation-timing-function: linear;
-  animation-delay: 2s;
+  animation-delay: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
 
 
 @keyframes example {
@@ -557,3 +556,5 @@ h4 {
         top: 0px;
     }
 }
+
+

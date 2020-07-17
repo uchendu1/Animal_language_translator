@@ -128,7 +128,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <div class="col-12 col-md-6 phone-sound">
             <div class="col-12 ">
                 <div>
-                    <img class="phone1 pas" src="./images/blob + screen.svg" alt="#">
+                    <img class="phone1 pas " src="./images/blob + screen.svg" alt="#">
                 </div>
             </div>
 
