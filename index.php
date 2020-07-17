@@ -128,7 +128,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <div class="col-12 col-md-6 phone-sound">
             <div class="col-12 ">
                 <div>
-                    <img class="phone1" src="./images/blob + screen.svg" alt="#">
+                    <img class="phone1 pas" src="./images/blob + screen.svg" alt="#">
                 </div>
             </div>
 
@@ -262,29 +262,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             </div>
         </div>
 
-        <div class="col-12 col-md-6  ">
+        <div class="col-12 col-md-6 ">
 
-            <div class="row d-flex justify-content-around my-4">
+            <div class="row d-flex justify-content-around my-4 ">
                 <div class="col-4">
-                    <img class="slide-img" src="./images/screen 1.svg" alt="#">
+                    <img class="slide-img pas" src="./images/screen 1.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img" src="./images/screen 2.svg" alt="#">
+                    <img class="slide-img pas" src="./images/screen 2.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img" src="./images/screen 3.svg" alt="#">
+                    <img class="slide-img pas" src="./images/screen 3.svg" alt="#">
                 </div>
             </div>
 
             <div class="row d-flex justify-content-around ">
                 <div class="col-4">
-                    <img class="slide-img" src="./images/screen 4.svg" alt="#">
+                    <img class="slide-img pas" src="./images/screen 4.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img" src="./images/screen 5.svg" alt="#">
+                    <img class="slide-img pas" src="./images/screen 5.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img" src="./images/screen 6.svg" alt="#">
+                    <img class="slide-img pas" src="./images/screen 6.svg" alt="#">
                 </div>
             </div>
 
