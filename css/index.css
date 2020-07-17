@@ -424,7 +424,7 @@ padding: 16px;
 }
 
 .email-1 {
-    width: 500px;
+    width: 200px;
     height: 40px;
 }
 .give-me-access {
@@ -434,5 +434,68 @@ padding: 16px;
 border-radius: 8px;
 }
 
-footer {
-    background: #002E05;}
+
+.logo{
+    display:block;
+}
+
+.calenderBox{
+    width: 65.37px;
+    height: 58.28px;
+    background: #FED8C3;
+    border-radius: 4px;
+}
+h5{
+    font-size: 27.5665px;
+    line-height: 66px;
+}
+h6{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15.7577px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+h4{
+    width: 6px;
+    height: 6px;
+    color: #FFFFFF;
+}
+.calender{
+    padding-top:0px;
+}
+@media screen and (max-width:1000px){
+    .logo{
+        display:none;
+    }
+    .calender{
+        padding-top:40px;
+    }
+    .calenderBox{
+        width: 50.99px;
+        height: 46.55px;
+        border-radius: 2.50828px;
+    }
+    h5{
+        font-size: 27.5665px;
+        line-height: 66px;
+    }
+    h6{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15.7577px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+    }
+}
+
+.translator {
+    font-family: Gilroy-Bold;
+font-weight: 20px;
+}

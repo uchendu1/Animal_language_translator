@@ -82,7 +82,7 @@
                 <div class=" col form&betadivcol">
 
                     <div class="col-12 form text-center">
-                        <form action="form.php" action="post">
+                        <form id="access-form">
                             <input type="email" name="email" class="w-50 my-3" placeholder="enter email address">
                             <button class="btn px-4 font-weight-bold mx-3 my-2 my-sm-0 text-white" type="submit"
                                 style="background-color: #0239C0;">
@@ -285,14 +285,16 @@
     <div class="row d-flex justify-content-center ">
         <div class="col-8">
             <p class="be-the-first text-center">
-                Be the first one to know when we launch. <span class="font-weight-bold">Sign up for early access.</span>
+                Be the first to know when we launch. <span class="font-weight-bold">Sign up for early access.</span>
             </p>
         </div>
     </div>
 
     <div class="row d-flex justify-content-center pb-4">
         <div class="col-8 text-center">
-            <input class="text-left email-1" type="email" placeholder=" Enter email address ">
+            <form action="form.php" action="post">
+                <input class="text-left email-1" type="email" placeholder=" Enter email address ">
+            </form>
         </div>
     </div>
 
@@ -303,15 +305,85 @@
     </div>
 
     <footer>
-        <div class="row">
-<div class="row">
-<div col->
-
-</div>
-</div>
-        </div>
-    </footer>
-    
+		<div class="container-fluid" style="background-color: #002E05">
+			<div class="container">
+               
+                <!-- <div class="row d-flex justify-content-start" style="margin-top: 30px;">
+                    <img class="pt-5 logo" src="./images/footer-paw.png" alt="#"> 
+                    <p class="text-white translator">Pet Translator</p>
+                </div> -->
+				<div class=" d-flex pb-5 calender mt-0 justify-content-center">
+                    
+					<div class="d-flex">
+						<div class="d-flex flex-column">
+							<div class="calenderBox d-flex justify-content-center align-items-center">
+								<h5 class="pt-1">30</h5>
+							</div>
+							<h6 class="mt-2 ml-3 ml-xs-0">
+								Days
+							</h6>
+						</div>
+						<div class="d-flex flex-column mx-3">
+							<h4>.</h4>
+							<h4 class="mt-lg-2">.</h4>
+						</div>
+						
+					</div>
+					<div class="d-flex">
+						<div class="d-flex flex-column">
+							<div class="calenderBox d-flex justify-content-center align-items-center">
+								<h5 class="pt-1">15</h5>
+							</div>
+							<h6 class="mt-2 ml-3">
+								Hours
+							</h6>
+						</div>
+						<div class="d-flex flex-column mx-3">
+							<h4>.</h4>
+							<h4 class="mt-lg-2">.</h4>
+						</div>
+						
+					</div>
+					<div class="d-flex">
+						<div class="d-flex flex-column">
+							<div class="calenderBox d-flex justify-content-center align-items-center">
+								<h5 class="pt-1">20</h5>
+							</div>
+							<h6 class="mt-2 ml-1">
+								Minutes
+							</h6>
+						</div>
+						<div class="d-flex flex-column mx-3 colon">
+							<h4>.</h4>
+							<h4 class="mt-lg-2">.</h4>
+						</div>
+						
+					</div>
+					<div class="d-flex">
+						<div class="d-flex flex-column">
+							<div class="calenderBox d-flex justify-content-center align-items-center">
+								<h5 class="pt-1">20</h5>
+							</div>
+							<h6 class="mt-2 ml-1">
+								Seconds
+							</h6>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="background-color:#6D6D6D">
+			<div style="color:white" class=" container py-1 d-flex justify-content-between">
+				<h6>2020 &copy; Designed by Groot</h6>
+				<div>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-facebook-f pl-3"></i>
+					<i class="fab fa-instagram pl-3"></i>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
     <!-- JS, Popper.js, and jQuery -->
@@ -323,6 +395,20 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script>
+        const form = document.getElementById('access-form')
+        form.addEventListener('submit', async (event)=>{
+            event.preventDefault()
+            const email = event.target.elements.email.value
+            const json = JSON.stringify({email})
+            let response = await fetch(`/app-3/form.php`,{
+                method: 'POST',
+                body:json
+            })
+           let result =  await response.text()
+           alert(result)
+        })
     </script>
 </body>
 
