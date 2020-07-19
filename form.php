@@ -2,11 +2,8 @@
 
 
  <?php
-$conn = mysquli_connect('localhost', 'linda', 'test1234','language-translator' );
- 
-if(!$conn){
-    echo 'connection error: ' . mysqli_connect_error();
-}
+
+include_once('connect.php');
 
 $sql = 'SELECT id, email FROM animal_languagea-translator';
 $result = mysqli_query($conn, $sql);

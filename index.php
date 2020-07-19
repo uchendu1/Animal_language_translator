@@ -1,19 +1,4 @@
 
-<?php
-$conn = mysqli_connect('localhost', 'linda', 'test1234','animal-language-translator' );
-//  $date = date_format('Y-m-d h:i:s', );
-if(!$conn){
-    die('connection error: ' . mysqli_connect_error());
-}
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $sql = "INSERT INTO `language-translator`(`id`, `email`, `created_at`) VALUES ('','".$_POST['email']."','')";
-    if(mysqli_query($conn, $sql)){
-        die('Email captured');
-    }else{
-        die('Erro capturing mail');
-    }
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -97,7 +82,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 
                 <div class=" col form&betadivcol">
-
+                    <?php include_once('process_form.php') ?>
                     <div class="col-12 form text-center">
                         <form id="access-form" action="index.php" method="post">
                             <input type="email" name="email" class="w-50 my-3" placeholder="enter email address">
@@ -128,7 +113,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <div class="col-12 col-md-6 phone-sound">
             <div class="col-12 ">
                 <div>
-                    <img class="phone1 pas " src="./images/blob + screen.svg" alt="#">
+                    <img class="phone1 " src="./images/blob + screen.svg" alt="#">
                 </div>
             </div>
 
@@ -266,25 +251,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
             <div class="row d-flex justify-content-around my-4 ">
                 <div class="col-4">
-                    <img class="slide-img pas" src="./images/screen 1.svg" alt="#">
+                    <img class="slide-img " src="./images/screen 1.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img pas" src="./images/screen 2.svg" alt="#">
+                    <img class="slide-img " src="./images/screen 2.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img pas" src="./images/screen 3.svg" alt="#">
+                    <img class="slide-img " src="./images/screen 3.svg" alt="#">
                 </div>
             </div>
 
             <div class="row d-flex justify-content-around ">
                 <div class="col-4">
-                    <img class="slide-img pas" src="./images/screen 4.svg" alt="#">
+                    <img class="slide-img " src="./images/screen 4.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img pas" src="./images/screen 5.svg" alt="#">
+                    <img class="slide-img " src="./images/screen 5.svg" alt="#">
                 </div>
                 <div class="col-4">
-                    <img class="slide-img pas" src="./images/screen 6.svg" alt="#">
+                    <img class="slide-img " src="./images/screen 6.svg" alt="#">
                 </div>
             </div>
 
